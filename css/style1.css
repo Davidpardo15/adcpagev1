@@ -17,6 +17,9 @@
     color: #2f58b1;
     z-index: 1;
   }
+  .c2{
+    margin-bottom: 0px
+  }
 
   .boxs h4{
     align-items: center;
@@ -153,13 +156,13 @@
     border-top-right-radius: 30px;
     border-bottom-left-radius: 30px;
     width: 280px;
-    height: 100px;
+    height: 85px;
     z-index: 1;
     bottom: 0px;
     left: 100px;
     transition: 0s;
     box-shadow: 21px 22px 44px 7px rgba(0,0,0,0.8);
-    opacity: 0.8;
+    opacity: 0.6;
   }
 
   .cont-circle{
