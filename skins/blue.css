@@ -102,8 +102,9 @@ ul.clients li:hover {
 }
 
 .btn-theme {
-  border:1px solid #5C9CC7;
-  background: #5C9CC7;
+  border:1px solid #0069d9;
+  border-radius: 10px;
+  background: #0069d9;
 }
 
 /* modal styled */
@@ -157,11 +158,11 @@ ul.clients li:hover {
 .icon-square:hover,
 .icon-rounded:hover,
 .icon-circled:hover {
-    background-color: #5C9CC7;
+    background-color: #0069d9;
 }
 [class^="icon-"].active,
 [class*=" icon-"].active {
-    background-color: #5C9CC7;
+    background-color: #0069d9;
 }
 
 /* fancybox */
