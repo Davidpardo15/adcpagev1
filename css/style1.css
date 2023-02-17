@@ -263,6 +263,10 @@
     
   }
 
+  .parallax5 {
+    background-image: url('https://s3.us-east-2.amazonaws.com/aircraft-digital.com/img/MicrosoftTeams-image+(19).png');
+  }
+
   .hero-text1 {
     position: relative;
     align-items: center;
@@ -313,3 +317,9 @@
   color: #000;
 }
 
+.map{ 
+  display: flex;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-block-end: 15px;
+}
