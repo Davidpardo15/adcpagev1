@@ -254,6 +254,15 @@
     background-image: url('https://cloudfront-us-east-1.images.arcpublishing.com/infobae/I2XXANNSMNHXFBVMDKGSYBOOCI.jpg');
   }
 
+  .parallax3 {
+    background-image: url('https://s3.us-east-2.amazonaws.com/aircraft-digital.com/img/MicrosoftTeams-image+(10).png');
+  }
+
+  .parallax4 {
+    background-image: url('https://s3.us-east-2.amazonaws.com/aircraft-digital.com/img/MicrosoftTeams-image+(17).png');
+    
+  }
+
   .hero-text1 {
     position: relative;
     align-items: center;
