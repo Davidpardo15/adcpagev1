@@ -273,6 +273,16 @@
     color: #fff;
 }
 
+.hero-text1 h3 {
+  max-width: 890px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+  text-align: center;
+  color: #fff;
+  padding-top: 120px;
+}
+
 .title-section {
   position: relative;
   align-items: center;
