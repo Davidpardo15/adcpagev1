@@ -202,7 +202,8 @@
   }
   
   .page-section p {
-    color: #6D728B;
+    color: #000000;
+    font-size: medium;
   }
 
   .subhead {
