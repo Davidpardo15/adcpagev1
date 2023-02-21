@@ -407,7 +407,7 @@
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 490px) {
   header .logo {
     margin-top: 0;
   }
