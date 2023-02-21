@@ -1,6 +1,9 @@
 .fondo{
   background-color: #111;
 }
+.cont-f{
+  height: 200px !important;
+}
 .containers {
     display: flex;
     width: 97%;
@@ -337,4 +340,69 @@
   padding-left: 15px;
   padding-right: 15px;
   margin-block-end: 15px;
+}
+
+@media (max-width: 1366px) {
+  .fondo{
+    background-color: #fff;
+  }
+  .containers {
+    display: flex;
+    width: 97%;
+    padding: 0 10px 0 50px;
+    box-sizing: border-box;
+    height:380px;
+    transform: skew(-10deg);
+  }
+  .container1{
+    
+    width: 200px;
+    height: 80px;
+    left: 60px;
+  }
+  h6{
+    font-size: 12px;
+  }
+  
+  header .logo img {
+  margin-bottom: 10px;
+  width:140px;
+  }
+
+  header .logo h1 {
+    font-size: 12px;
+  }
+
+  .site-navbar .site-navigation .site-menu > li > a {
+
+    color: #0069d9;
+    font-size: 15px;
+    text-decoration: none !important; 
+  }
+  .row .row, .row-fluid .row-fluid {
+    margin-bottom: 0px;
+  }
+  .row, .row-fluid {
+    margin-bottom: 18px;
+  }
+
+  .widget h4,.widget h5 {
+    font-weight:300;
+    margin-bottom:20px;
+    font-size: 15px;
+  }
+  .foot{
+    height: 190px;
+  }
+  .container {
+    padding: 0 20px 0 20px;
+    position: relative;
+  }
+  .col-f{
+    height: 150px;
+  }
+  .cont-f{
+    height: 140px !important;
+  }
+
 }
