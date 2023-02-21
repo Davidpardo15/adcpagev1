@@ -344,7 +344,7 @@
 
 @media (max-width: 1366px) {
   .fondo{
-    background-color: #fff;
+    background-color: #111;
   }
   .containers {
     display: flex;
@@ -404,5 +404,84 @@
   .cont-f{
     height: 140px !important;
   }
+}
 
+@media (max-width: 390px) {
+  header .logo {
+    margin-top: 0;
+  }
+  .row, .row-fluid {
+    margin-bottom: 8px;
+  }
+  header .logo img {
+    margin-bottom: 0px;
+    width:100px;
+  }
+  header .logo h1 {
+    font-size: 10px;
+  }
+  .text-white {
+    color: #111 !important;
+  }
+  .col-9 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .containers {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0 0 0 0;
+    box-sizing: border-box;
+    height: 620px;
+    transform: skew(0);
+  }
+  .container1{
+    width: 150px;
+    height: 50px;
+    left: 110px;
+    bottom: 40px;
+  }
+  header .logo img {
+
+    width:80px;
+    }
+  .c2{
+    height: 24px;
+    width: 24px;
+  }
+  h6{
+    font-size: 8px;
+  }
+  .widget h5{
+    font-size: 8px;
+  }
+  address{
+    font-size: 7px;
+  }
+  .link-list{
+    font-size: 7px;
+  }
+  .credits{
+    font-size: 7px;
+  }
+  .icon-32{
+    height: 10px;
+    width: 10px;
+  }
+
+  .social li a{
+    height: 10px;
+    width: 10px;
+  }
+
+  .icon-linkedin .icon-instagram .icon-facebook{
+    height: 10px;
+    width: 10px;
+  }
+  .social-network{
+    opacity: 0;
+  }
 }
