@@ -341,9 +341,11 @@
   padding-right: 15px;
   margin-block-end: 15px;
 }
-.device{
+.devices{
   visibility: hidden;
 }
+
+
 
 @media (max-width: 1366px) {
   .fondo{
@@ -411,6 +413,7 @@
 }
 
 @media (max-width: 490px) {
+
   header .logo {
     margin-top: 0;
   }
@@ -422,10 +425,7 @@
     width:100px;
   }
   header .logo h1 {
-    font-size: 10px;
-  }
-  .device{
-    visibility: show;
+    font-size: 13px;
   }
   
   .col-9 {
@@ -513,6 +513,9 @@
   }
 
 
+  .boxs:hover:active {
+    transition: 1s;
+  }
 
   .boxs:hover:active .content-overlay{
     opacity: 0.5;
@@ -591,7 +594,7 @@
     position: absolute;
     width: 110%;
     right: 0px;
-    background: #0069d9;
+    background: #fafafa;
     transform-origin: 0 0;
     transform: skew(-1deg) translateX(-120%);
     transition: all .275s .1s;
@@ -732,15 +735,22 @@
 	color: #111;
 }
 
-.device {
+.devices {
   visibility: visible;
-	position: relative;
-	width: 345px;
-	height: 600px;
-	background: #FFF;
-	border: 1px solid #EEE;
-	border-radius: 3px;
-	box-shadow: 0 0 0 10px rgba(0,0,0,.1);
 }
 
+.s6{
+  flex-basis: 45%;
+}
+
+.col-4{
+  max-width: 100%;
+}
+
+.foot-v{
+visibility: hidden;
+}
+.s4{
+flex-basis: 10%;
+}
 }
