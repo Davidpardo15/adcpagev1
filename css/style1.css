@@ -753,4 +753,8 @@ visibility: hidden;
 .s4{
 flex-basis: 10%;
 }
+
+.cont-form{
+  width: 350px;
+}
 }

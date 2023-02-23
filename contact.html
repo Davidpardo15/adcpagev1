@@ -48,7 +48,7 @@
           <div class="col-4">
             <div class="logo">
               <a href="index.html"><img src="img/Logoadc.png" alt="" class="logo" /></a>
-              <h1> <strong> Aircraft Digital</strong> Company</h1>
+              <a href="index.html"></a><h1> <strong> Aircraft Digital</strong> Company</h1></a>
             </div>
           </div>
           <div class="site-navbar-wrap">
@@ -58,7 +58,7 @@
                   <div class="col-9">
                     <nav class="site-navigation text-right" role="navigation">
                       <div class="container">
-                        <div class="d-inline-block d-lg-none ml-md-0 mr-auto py-3"><a href="#" class="site-menu-toggle js-menu-toggle text-white"><span class="icon-menu h3"></span></a></div>
+                        <div class="d-inline-block d-lg-none ml-md-0 mr-auto py-3"><a href="index.html" class="site-menu-toggle js-menu-toggle text-white"><span class="icon-menu h3"></span></a></div>
                         <ul class="site-menu main-menu js-clone-nav d-none d-lg-block">
                           <li class="active"><a href="index.html" class="nav-link">Home</a></li>
                           <li class="has-children">
@@ -95,6 +95,28 @@
                         </ul>
                       </div>
                     </nav>
+                    <nav class="devices">
+                    
+                      <button id="burger" class="open-main-nav">
+                        <span class="burger"></span>
+                        <span class="burger-text">Menu</span>
+                      </button>
+                      <nav class="main-nav" id="main-nav">
+                        <ul>
+                          <li>
+                            <a href="index.html">Home</a>
+                          </li>
+                          <li>
+                            <a href="asset-management-services.html">Services</a>
+                          </li>
+                          <li>
+                            <a href="about.html">About Us</a>
+                          </li>
+                          <li>
+                            <a href="contact.html">Contact</a>
+                          </li>
+                        </ul>
+                      </nav>
                   </div>
                 </div>
               </div>
@@ -119,50 +141,48 @@
         </div>
       </div>
     </section>
-    <section id="content">
-      <div class="map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d994.1421225529184!2d-74.05964437084862!3d4.670748536439294!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9af403413b3d%3A0x7c18d280ff1ffa2f!2sAIRCRAFT%20DIGITAL!5e0!3m2!1sen!2sco!4v1660848122381!5m2!1sen!2sco" allowfullscreen></iframe> 
-          
-      </div>
-      
-    </section>
-      <section>
-
-    
+    <section>
       <div class="container">
         <div class="row">
           <div class="span12">
             <h4>Get in touch with us by filling <strong>contact form below</strong></h4>
-
-            <form action="" method="post" role="form" class="contactForm">
-              <div id="sendmessage">Your message has been sent. Thank you!</div>
-              <div id="errormessage"></div>
-
-              <div class="row">
-                <div class="span4 form-group">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
-                  <div class="validation"></div>
+            <div class="cont-form">
+              <form action="" method="post" role="form" class="contactForm">
+                <div id="sendmessage">Your message has been sent. Thank you!</div>
+                <div id="errormessage"></div>
+  
+                <div class="row">
+                  <div class="span4 form-group">
+                    <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                    <div class="validation"></div>
+                  </div>
+                  <div class="span4 form-group">
+                    <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                    <div class="validation"></div>
+                  </div>
+                  <div class="span4 form-group">
+                    <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                    <div class="validation"></div>
+                  </div>
+                  <div class="span12 margintop10 form-group">
+                    <textarea class="form-control" name="message" rows="12" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+                    <div class="validation"></div>
+                    <p class="text-center">
+                      <button class="btn btn-large btn-theme margintop10" type="submit">Submit message</button>
+                    </p>
+                  </div>
                 </div>
-                <div class="span4 form-group">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
-                  <div class="validation"></div>
-                </div>
-                <div class="span4 form-group">
-                  <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
-                  <div class="validation"></div>
-                </div>
-                <div class="span12 margintop10 form-group">
-                  <textarea class="form-control" name="message" rows="12" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
-                  <div class="validation"></div>
-                  <p class="text-center">
-                    <button class="btn btn-large btn-theme margintop10" type="submit">Submit message</button>
-                  </p>
-                </div>
-              </div>
-            </form>
+              </form>
+            </div>
           </div>
         </div>
       </div>
+    </section>
+    
+    <section id="content">
+      <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d994.1421225529184!2d-74.05964437084862!3d4.670748536439294!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9af403413b3d%3A0x7c18d280ff1ffa2f!2sAIRCRAFT%20DIGITAL!5e0!3m2!1sen!2sco!4v1660848122381!5m2!1sen!2sco" allowfullscreen></iframe> 
+      </div>  
     </section>
     <footer class="foot">
       <div class="container" style="height: 200px;">
@@ -230,7 +250,7 @@
   <script src="js/jquery.ba-cond.min.js"></script>
   <script src="js/jquery.slitslider.js"></script>
   <script src="js/animate.js"></script>
-
+  <script src="js/js.js"></script>
   <!-- Contact Form JavaScript File -->
   <script src="contactform/contactform.js"></script>
 
