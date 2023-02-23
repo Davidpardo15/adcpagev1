@@ -147,7 +147,7 @@
           <div class="span12">
             <h4>Get in touch with us by filling <strong>contact form below</strong></h4>
             <div class="cont-form">
-              <form action="" method="post" role="form" class="contactForm">
+              <form action="contact.php" method="post" role="form" class="contactForm" enctype="multipart/form-data">
                 <div id="sendmessage">Your message has been sent. Thank you!</div>
                 <div id="errormessage"></div>
   
@@ -157,7 +157,7 @@
                     <div class="validation"></div>
                   </div>
                   <div class="span4 form-group">
-                    <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                    <input type="email" class="form-control" name="email" id="email" placeholder="Your e-mail" data-rule="email" data-msg="Please enter a valid email" />
                     <div class="validation"></div>
                   </div>
                   <div class="span4 form-group">
@@ -165,7 +165,7 @@
                     <div class="validation"></div>
                   </div>
                   <div class="span12 margintop10 form-group">
-                    <textarea class="form-control" name="message" rows="12" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+                    <textarea class="form-control" name="message" rows="12" data-rule="required" data-msg="Please write something for us" placeholder="Your message"></textarea>
                     <div class="validation"></div>
                     <p class="text-center">
                       <button class="btn btn-large btn-theme margintop10" type="submit">Submit message</button>
