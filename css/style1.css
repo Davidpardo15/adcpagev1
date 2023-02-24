@@ -137,6 +137,10 @@
     font-size: 15px;
     
   }
+
+  header .container{
+    padding-bottom: 15px;
+  }
   .content-details .container{
     padding-right: 50px;
   }
@@ -376,10 +380,14 @@
   color: #4ad1e5;
 }
 
+.simple-linear {
+  background: linear-gradient(white, #111 80%);
+  height: 30px;
+}
 
 @media (max-width: 1366px) {
   .fondo{
-    background-color: #111;
+    background-color: #fff;
   }
   .containers {
     display: flex;
@@ -405,7 +413,8 @@
   }
 
   header .logo h1 {
-    font-size: 12px;
+    padding-top: 25px;
+    font-size: 25px;
   }
 
   .site-navbar .site-navigation .site-menu > li > a {
@@ -427,12 +436,16 @@
     font-size: 15px;
   }
   .foot{
-    height: 190px;
-    padding-top: 36px;
+    height: 250px;
+    padding-top: 20px;
+    background-color: #000;
   }
   .container {
     padding: 0 20px 0 20px;
     position: relative;
+  }
+  .foot .container{
+    height: 150px;
   }
   .col-f{
     height: 150px;
