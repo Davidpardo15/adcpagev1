@@ -381,7 +381,7 @@
 }
 
 .simple-linear {
-  background: linear-gradient(white, #111 80%);
+  background: linear-gradient(white, #111 90%);
   height: 30px;
 }
 
@@ -436,7 +436,7 @@
     font-size: 15px;
   }
   .foot{
-    height: 250px;
+    height: 180px;
     padding-top: 20px;
     background-color: #000;
   }
