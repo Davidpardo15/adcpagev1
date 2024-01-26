@@ -393,7 +393,11 @@
 }
 header .logo h1{
   padding-top: 20px;
-  font-size: 26px;
+  font-size: 34px;
+}
+
+.titulo {
+  font-size: 18px;
 }
 
 @media (max-width: 1366px) {
@@ -720,7 +724,6 @@ header .logo h1{
 	font-weight: bold;
 }
 
-/* Burger Style: @see: https://codepen.io/CreativeJuiz/full/oMZNXy */
 .open-main-nav {
 	position: absolute;
 	top: 15px;
