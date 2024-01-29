@@ -28,6 +28,48 @@
   <link rel="apple-touch-icon-precomposed" href="ico/adc_icon.png" />
   <link rel="shortcut icon" href="ico/adc_icon.png" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,500,1,200" />
+
+  <script>
+    function sendMail(e) {
+         e.preventDefault();
+      var name = $("#name").val();
+      var email = $("#email").val();
+      var message = $("#message").val();
+      var subject = $("#subject").val();
+      if (name !== null
+        && email !== null
+        && message !== null
+        && subject !== null) {
+        var json_object = {
+          "name": name,
+          "email": email,
+          "message": message,
+          "subject": subject
+        };
+        console.log(name,email,message,subject)
+  
+        $.ajax({
+        cache: false,
+        data: JSON.stringify(json_object),
+        contentType: "application/json",
+        url: 'https://pfy5waubb2.execute-api.us-east-1.amazonaws.com/contact/contacto',
+        dataType: "json",
+        type: 'POST',
+        crossDomain: true,
+        success: function () {
+          document.getElementById("name").value = "";
+          document.getElementById("subject").value = "";
+          document.getElementById("email").value = "";
+          document.getElementById("message").value = "";
+         alert('Tu comentario fue enviado correctamente.', { timeOut: 5000 });
+        },
+        error: function (XMLHttpRequest, textStatus, errorThrown) {
+          toastr.error('Tuvimos un problema al recibir su solicitud, Favor de volver a intentar en unos minutos.');
+        }
+      });
+      }
+    }
+  </script>
 </head>
 
 <body>
@@ -146,10 +188,7 @@
           <div class="span12">
             <h4>Get in touch with us by filling <strong>contact form below</strong></h4>
             <div class="cont-form">
-              <form action="contact.php" method="post" role="form" class="contactForm" enctype="multipart/form-data">
-                <div id="sendmessage">Your message has been sent. Thank you!</div>
-                <div id="errormessage"></div>
-  
+              <form id="contact-form" method="post">
                 <div class="row">
                   <div class="span4 form-group">
                     <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
@@ -164,10 +203,10 @@
                     <div class="validation"></div>
                   </div>
                   <div class="span12 margintop10 form-group">
-                    <textarea class="form-control" name="message" rows="12" data-rule="required" data-msg="Please write something for us" placeholder="Your message"></textarea>
+                    <textarea class="form-control" id="message" name="message" rows="12" data-rule="required" data-msg="Please write something for us" placeholder="Your message"></textarea>
                     <div class="validation"></div>
                     <p class="text-center">
-                      <button class="btn btn-large btn-theme margintop10" type="submit">Submit message</button>
+                      <button class="btn btn-large btn-theme margintop10" onClick="sendMail(event)">Submit message</button>
                     </p>
                   </div>
                 </div>
@@ -222,6 +261,7 @@
 
   <!-- Template Custom JavaScript File -->
   <script src="js/custom.js"></script>
+
 
 </body>
 
